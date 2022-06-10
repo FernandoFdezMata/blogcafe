@@ -112,3 +112,16 @@ image{
     font-size: 1.8rem;
     color: var(--blanco);
 }
+
+
+
+
+
+
+/*FOOTER*/
+.footer{
+    text-align: center;
+    font-size: var(--fuenteHeading);
+    font-weight: 400;
+    gap: 2rem;
+}
