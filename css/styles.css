@@ -125,3 +125,13 @@ image{
     font-weight: 400;
     gap: 2rem;
 }
+
+/*Contenido principal*/
+
+@media (min-width: 768px) { 
+    .contenido_principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
