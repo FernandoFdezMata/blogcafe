@@ -154,12 +154,17 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+
 }
 @media (min-width: 768px) { 
     .boton{
         display: inline-block;
 
     }
+}
+.boton:hover{
+    cursor: pointer;
 }
 .boton--primario{
     background-color: var(--negro);
@@ -248,13 +253,17 @@ img{
 }
 .campo{
     display: flex;
+    margin-bottom: 2rem;
 }
 .campo__label{
-    flex: 0 0;
+    flex: 0 0 9rem;
+    text-align: center;
+    padding-right: 2rem;
 }
 .campo__field{
     flex: 1;
+    border: 1px solid var(--claro);
 }
 .campo__field--textarea{
-
+    height: 20rem;
 }
