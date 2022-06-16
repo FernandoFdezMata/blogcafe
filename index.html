@@ -5,11 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BlogDelCafé</title>
-    
+        <!--prefetch  -->
+        <link rel="prefetch" href="nosotros.html" as="document">
+
+        <!-- preload -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <!-- preload -->
         <link rel="preload" href="css/normalize.css" as="styles">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="preload" href="css/normalize.css" as="styles">
@@ -17,7 +19,6 @@
 
         
     </head>
-    <body>
         <header class="header">
             <div class="contenedor">
                 <div class="barra">
@@ -43,7 +44,10 @@
 
                 <article class="entrada">
                     <div class="entrada__img"> 
-                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                        </picture>
                     </div>
                     <div class="entrada__contenido">
                         <h4 class="no-margin">Tipos de grano de café</h4>
@@ -55,7 +59,10 @@
 
                 <article class="entrada">
                     <div class="entrada__img"> 
-                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                        </picture>
                     </div>
                     <div class="entrada__contenido">
                         <h4 class="no-margin">Tres deliciosas recetas de café</h4>
@@ -67,7 +74,10 @@
 
                 <article class="entrada">
                     <div class="entrada__img"> 
-                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                        </picture>
                     </div>
                     <div class="entrada__contenido">
                         <h4 class="no-margin">Beneficios del café</h4>
@@ -111,5 +121,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/modernizr.js"></script>
     </body>
 </html>
